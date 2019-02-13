@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = 'jekyll-theme-digitalebrain'
-  s.version       = '0.1.7'
+  s.version       = '0.1.7.2'
   s.license       = 'CC0-1.0'
   s.authors       = ['Pablo Cisneros', 'DigitaleBrain']
   s.email         = ['pcisnerp@gmail.com']
@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.summary       = 'A perfect site to start'
 
 
-  s.files         = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^((_includes|_layouts|_sass|assets)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
+  s.files = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
 
   s.platform = Gem::Platform::RUBY
