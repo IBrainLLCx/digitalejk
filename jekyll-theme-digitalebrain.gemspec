@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = 'jekyll-theme-digitalebrain'
-  s.version       = '0.1.7.4'
+  s.version       = '0.1.7.5'
   s.license       = 'CC0-1.0'
   s.authors       = ['Pablo Cisneros', 'DigitaleBrain']
   s.email         = ['pcisnerp@gmail.com']
