@@ -1,7 +1,5 @@
 # Jekyll-theme-DigitaleBrain
 
-![Digitale Brain Jekyll Theme screenshot](screenshot.png)
-
 # Install as Gem Theme
 Jekyll requires Ruby so make sure Ruby is installed before you begin.
 

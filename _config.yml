@@ -27,9 +27,8 @@ ButtonContent: Read Me
 #####################################
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter: https://twitter.com/zioguillo
-github: https://github.com/ZioGuillo
-instagram: https://instagram.com/zioguillo
+twitter_username:
+github_username:
 
 # Build settings
 markdown: kramdown
