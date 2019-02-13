@@ -1,52 +1,51 @@
-# jekyll-theme-digitalebrain
+# Jekyll-theme-DigitaleBrain
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+![Digitale Brain Jekyll Theme screenshot](screenshot.png)
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+# Install as Gem Theme
+Jekyll requires Ruby so make sure Ruby is installed before you begin.
 
-TODO: Delete this and the text above, and describe your gem
+### Start a New Site
+- Install Jekyll and Bundler
+  - `gem install bundler`
+- Create a New Site
+  - `jekyl new mysite`
+- Move into that directory
+  - `cd mysite`
+- Install Required Gems
+  - `bundle install`
+- Verify
+  - Run `jekyll serve`
+  - Browse to [http://localhost:4000](http://localhost:4000)
+- Download Starving Artist Theme
+  - Replace the line `gem "minima"` with this:
+    - `gem "jekyll-theme-digitalebrain"`
+  - Run `bundle install`
+- Tell Jekyll to use Starving Artist Theme
+  - Open `_config.yml` and change the line `theme: minima` to this:
+    - `theme: jekyll-theme-digitalebrain`
 
 
-## Installation
+### Migrate an Existing Site
+**NOTE** This requires you to be upgraded to at least Jekyll 3.2 which added support for themes.
 
-Add this line to your Jekyll site's `Gemfile`:
+- Download Starving Artist Theme
+  - Replace the line `gem "minima"` with this:
+    - `gem "jekyll-theme-digitalebrain"`
+  - Run `bundle install`
+- Tell Jekyll to use Starving Artist Theme
+  - Open `_config.yml` and change the line `theme: minima` to this:
+    - `theme: jekyll-theme-digitalebrain`
 
-```ruby
-gem "jekyll-theme-digitalebrain"
-```
+# Jekyll 2.x Method
+Jekyll requires Ruby so make sure Ruby is installed before you begin.
 
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: jekyll-theme-digitalebrain
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-theme-digitalebrain
-
-## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-digitalebrain.gemspec` accordingly.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
+- Download this site
+  - `git clone https://github.com/digitalebrain/digitalejk.git`
+- Move into its directory
+  - `cd digitalejk`
+- Install Required Gems
+  - `bundle install`
+- Verify
+  - Run `jekyll serve`
+  - Browse to [http://localhost:4000](http://localhost:4000)
