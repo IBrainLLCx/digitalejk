@@ -1,0 +1,101 @@
+#left-main {
+  left: 191px;
+}
+
+@media (max-width: 815.98px) {
+  #left-main {
+  left: auto;
+  top: 45px;
+    }
+  }
+
+.bg-mobile {
+    background-image:url('/assets/images/bg_1.jpg') !important;
+    background-position: 50% -1px !important;
+}
+
+@media (max-width: 300px) {
+  .bg-mobile {
+
+    background-image:url('/assets/images/bg_1_.jpg') !important;
+    background-position: 50% -1px !important;
+  }
+}
+@media (min-width: 301px) and (max-width: 600px) {
+  .bg-mobile {
+
+    background-image:url('/assets/images/bg_1_.jpg') !important;
+    background-position: 50% -1px !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  .bg-mobile {
+
+    background-image:url('/assets/images/bg_1_.jpg') !important;
+    background-position: 50% -1px !important;
+  }
+}
+@media (max-width: 815px) {
+  .bg-mobile {
+
+    background-image:url('/assets/images/bg_1_.jpg') !important;
+    background-position: 50% -1px !important;
+  }
+}
+
+.bg-pages {
+    background-image:url('/assets/images/bubbles_.jpg') !important;
+    background-position: 50% -1px !important;
+}
+
+@media (max-width: 300px) {
+  .bg-pages {
+
+    background-image:url('/assets/images/bubbles_.jpg') !important;
+    background-position: 50% -1px !important;
+  }
+}
+@media (min-width: 301px) and (max-width: 600px) {
+  .bg-pages {
+
+    background-image:url('/assets/images/bubbles_.jpg') !important;
+    background-position: 50% -1px !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  .bg-pages {
+
+    background-image:url('/assets/images/bubbles_.jpg') !important;
+    background-position: 50% -1px !important;
+  }
+}
+@media (max-width: 815px) {
+  .bg-pages {
+
+    background-image:url('/assets/images/bubbles_.jpg') !important;
+    background-position: 50% -1px !important;
+  }
+}
+
+ul {
+    list-style: none;
+}
+
+ul.icons {
+    cursor: default;
+    padding-left: 0px;
+    list-style: none;
+}
+ul.icons li {
+    display: inline-block;
+    padding-right: 5px;
+    padding: 0 1.5em 0 0;
+}
+
+#div_top_socials {
+    display:inline;
+}
+
+#ul_top_socials li{
+    display: inline;
+}
