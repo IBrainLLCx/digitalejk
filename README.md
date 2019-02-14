@@ -35,7 +35,7 @@ Jekyll requires Ruby so make sure Ruby is installed before you begin.
   - Open `_config.yml` and change the line `theme: minima` to this:
     - `theme: jekyll-theme-digitalebrain`
 
-# Jekyll 2.x Method
+# Jekyll 3.x Method
 Jekyll requires Ruby so make sure Ruby is installed before you begin.
 
 - Download this site
