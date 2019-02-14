@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Digitale Brain
 email: pcisnerp@gmail.com
-description: "Founder in 1856, Our Agency has over 175 lawyers, Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth."
+description: ""
 
 # Index File
 #####################################
@@ -28,6 +28,7 @@ url: "http://www.digitalebrain.com" # the base hostname & protocol for your site
 twitter: https://twitter.com/ZioGuillo
 github: https://github.com/ZioGuillo
 instagram: https://instagram.com/ZioGuillo
+linkedin: https://www.linkedin.com/in/pablocisneros/
 
 # Build settings
 markdown: kramdown
