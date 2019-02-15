@@ -24,7 +24,7 @@ content2: Demo
 ButtonContent: Read Me
 #####################################
 contact: true
-history: true
+history: false
 
 #####################################
 baseurl: "" # the subpath of your site, e.g. /blog
