@@ -1,8 +1,4 @@
 ---
 layout: default
-title: Blogging Like a Hacker
-history: "<h3>Founder in 1856, Our Agency has over 175 lawyers</h3>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-
-<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>"
+history: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus tempor pellentesque. Maecenas auctor rutrum lacus, quis luctus erat ullamcorper eget. Phasellus quis facilisis ligula. Donec congue dapibus mauris luctus convallis. Donec maximus erat sit amet eros varius, sed interdum nisi commodo. Phasellus sit amet aliquam nulla. Donec nec pharetra tortor."
 ---

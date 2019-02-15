@@ -1,13 +1,27 @@
 <!-- nav -->
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" data-aos="fade-down" data-aos-delay="500">
       <div class="container">
-        <a class="navbar-brand" href="#"><span class="flaticon-brain"></span> DigitaleBrain</a>
+        <a class="navbar-brand" href="/"><span class="flaticon-brain"></span> DigitaleBrain</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="#section-home" class="nav-link">Home</a></li>
+
+            {% if page.url == "/" %}
+              <li class="nav-item active">
+            {% else %}
+              <li class="nav-item">
+            {% endif %}
+              <a class="nav-link" href="/">Home</a></li>
+
+            {% if page.url == "/#contactus" %}
+              <li class="nav-item active">
+            {% else %}
+              <li class="nav-item">
+            {% endif %}
+              <a class="nav-link" href="#contactus">Contact Us</a></li>
+
             <!--<li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>
             <li class="nav-item"><a href="#history" class="nav-link">Know us</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>

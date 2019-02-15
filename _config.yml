@@ -23,6 +23,10 @@ content: DigitaleBrain
 content2: Demo
 ButtonContent: Read Me
 #####################################
+contact: true
+history: true
+
+#####################################
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.digitalebrain.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter: https://twitter.com/ZioGuillo

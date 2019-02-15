@@ -17,23 +17,47 @@
       </div>
     </section>
 
-<!-- {% include _counter.html %} -->
-{% if page.history %}
+{% if page.counter %}
+
+  {% include _counter.html %}
+
+{% endif %}
+
+{% if site.history == true %}
 
   {% include _history.html %}
 
 {% endif %}
 
+{% if page.wwe %}
 
-<!-- {% include _wwe.html %} -->
+  {% include _wwe.html %}
 
-<!-- {% include _testimonies.html %} -->
+{% endif %}
 
-<!-- {% include _personal.html %} -->
+{% if page.testimonies %}
 
-{% include _contactus.html %}
+  {% include _testimonies.html %}
 
-<!-- {% include _blog.html %} -->
+{% endif %}
+
+{% if page.staff %}
+
+  {% include _personal.html %}
+
+{% endif %}
+
+{% if site.contact == true %}
+
+  {% include _contactus.html %}
+
+{% endif %}
+
+{% if page.blog %}
+
+  {% include _blog.html %}
+
+{% endif %}
 
 <!-- extra content -->
 
