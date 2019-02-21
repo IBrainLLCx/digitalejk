@@ -1,0 +1,14 @@
+docs_list_title: Staff
+staff:
+
+- position: CEO
+  name: Jorge Celico
+  imagen: person_1
+
+- position: CIO
+  name: Pablo Zerrano
+  imagen: person_2
+
+- position: TCI
+  name: Yume Chang
+  imagen: person_3

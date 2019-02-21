@@ -1,17 +1,22 @@
 <div class="ftco-section ftco-counter" id="section-counter">
       <div class="container">
         <div class="row">
+
+        {% for items in site.data._numbers.numbers %}
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap" data-aos="fade-up">
             <div class="block-18 d-flex align-items-center">
               <div class="icon mr-4">
                 <span class="flaticon-lawyer"></span>
               </div>
               <div class="text">
-                <strong class="number" data-number="1000">0</strong>
-                <span>Qualified Lawyer</span>
+                <strong class="number" data-number="{{ items.value }}">0</strong>
+                <span>{{ items.title }}</span>
               </div>
             </div>
           </div>
+        {% endfor %}
+
+          <!--
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap" data-aos="fade-up">
             <div class="block-18 d-flex align-items-center">
               <div class="icon mr-4">
@@ -40,11 +45,11 @@
                 <span class="flaticon-trophy"></span>
               </div>
               <div class="text">
-                <strong class="number" data-number="12921">5143</strong>
+                <strong class="number" data-number="12921">0</strong>
                 <span>Honor &amp; Awards</span>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
     </div>
 </div>

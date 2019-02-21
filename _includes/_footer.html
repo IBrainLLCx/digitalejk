@@ -3,7 +3,11 @@
   <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container">
 
-<!-- {% include _additionalfooter.html %} -->
+{% if site.extrafooter %}
+
+  {% include _additionalfooter.html %}
+
+{% endif %}
 
       <div class="row">
         <div class="col-md-12 text-center">

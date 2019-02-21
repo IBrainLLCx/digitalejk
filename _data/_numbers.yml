@@ -1,0 +1,14 @@
+numbers_list_title: numbers
+numbers:
+
+- title: Repositories
+  value: 10
+
+- title: Proyects
+  value: 12
+
+- title: Lines of Code
+  value: 4000
+
+- title: Technologies used
+  value: 5

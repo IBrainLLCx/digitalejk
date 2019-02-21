@@ -1,3 +1,8 @@
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 #left-main {
   left: 191px;
 }

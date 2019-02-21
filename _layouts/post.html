@@ -1,8 +1,138 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+{% include _head.html %}
+  <body>
+  <!-- NAVBAR -->
+  {% include _navbar.html %}
+  <!-- END NAVBAR -->
 
-<h3>Founder in 1856, Our Agency has over 175 lawyers</h3>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    <section class="ftco-cover overlay" style="background-image: url(../assets/images/{{ page.imagen }}.jpg);" id="section-home" data-aos="fade"  data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center ftco-vh-100">
+          <div class="col-md-9 text-center">
+            <h1 class="ftco-heading mb-4" data-aos="fade-up" data-aos-delay="500">{{ page.title }}</h1>
+            <h2 class="h5 ftco-subheading mb-5" data-aos="fade-up"  data-aos-delay="600">{{ page.resume }}
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    <!-- END section -->
+
+    <div class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              <img src="../assets/images/{{ page.imagen }}.jpg" alt="" class="img-fluid">
+            </p>
+            {{ content }}
+            <div class="tag-widget post-tag-container mb-5 mt-5">
+              <div class="tagcloud">
+              {% for tags in page.tags %}
+                <a href="#" class="tag-cloud-link">{{ tags }}</a>
+              {% endfor %}
+              </div>
+            </div>
+
+            <div class="about-author d-flex pt-5">
+              <div class="bio align-self-md-center mr-4">
+                <img src="../assets/images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4" style="height: 50px weigth:50px;">
+              </div>
+              <div class="desc align-self-md-center">
+                <h3>About The Author</h3>
+                <p><h6>{{ page.author }}</h6> {{ page.author_description }}</p>
+              </div>
+            </div>
+        </div>
+        <!-- lateral page -->
+        <div class="col-md-4 sidebar">
+            <div class="sidebar-box">
+              <form action="/search.html" method="get" class="search-form">
+                <div class="form-group">
+                  <span class="icon fa fa-search"></span>
+                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter" name="query">
+                </div>
+              </form>
+            </div>
+
+
+            <div class="sidebar-box">
+              <div class="categories">
+                <h3>Categories</h3>
+                <!-- ========================================= -->
+                <ul>
+                {% assign categories_list = site.categories %}
+                {% if categories_list.first[0] == null %}
+                  {% for category in categories_list %}
+                    <li><a href="#{{ category }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a></li>
+                  {% endfor %}
+                {% else %}
+                  {% for category in categories_list %}
+                    <li><a href="#{{ tag[0] }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
+                  {% endfor %}
+                {% endif %}
+                {% assign categories_list = nil %}
+                </ul>
+                <!--
+                {% for tag in site.categories %}
+                <h3 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h3>
+                <ul>
+                {% assign pages_list = tag[1] %}
+                {% for post in pages_list %}
+                  {% if post.title != null %}
+                    {% if group == null or group == post.group %}
+                      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span></a></li>
+                    {% endif %}
+                  {% endif %}
+                  {% endfor %}
+                {% assign pages_list = nil %}
+                {% assign group = nil %}
+                </ul>
+                {% endfor %}
+                -->
+                <!-- ========================================= -->
+              </div>
+            </div>
+
+            <div class="sidebar-box">
+              <h3>Tag Cloud</h3>
+              <div class="tagcloud">
+              <!-- ========================================= -->
+
+              <!-- ========================================= -->
+              <ul>
+                {% assign tag_list = site.tags %}
+                {% if tag_list.first[0] == null %}
+                  {% for tags in tag_list %}
+                    <li><a href="#{{ tags }}" class="tag-cloud-link">{{ tags | capitalize }} ({{ site.tags[tags].size }})</a></li>
+                  {% endfor %}
+                {% else %}
+                  {% for tags in tag_list %}
+                    <li><a href="#{{ tag[0] }}">{{ tags[0] | capitalize }} ({{ tags[1].size }})</a></li>
+                  {% endfor %}
+                {% endif %}
+                {% assign tag_list = nil %}
+                </ul>
+              <!-- ========================================= -->
+              </div>
+            </div>
+            {% assign hours= site.time | date: "%H" | plus:100 %}
+            {% assign random = page.title.size | plus: hours | modulo: site.data._randomquotes.size %}
+
+            <div class="sidebar-box">
+              <h3>Paragraph</h3>
+              <p>{{ site.data._randomquotes[random].text }}</p>
+            </div>
+          </div>
+          <!-- end lateral page -->
+
+      </div>
+    </div>
+<!-- FOOTER -->
+{% include _footer.html %}
+<!-- END FOOTER -->
+{% include loader.html %}
+  </body>
+</html>

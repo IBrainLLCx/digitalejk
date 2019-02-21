@@ -1,0 +1,24 @@
+docs_list_title: Nav Bar
+navs:
+
+- title: Home
+  url: /
+
+- title: Proyects
+  url: "#proyects"
+
+- title: Blog
+  url: "#blog"
+
+- title: Contact Us
+  url: "#contactus"
+
+#- title: Know Us
+#  url: "#knowus"
+
+#- title: Blog
+#  url: "#blog"
+
+#- title: About
+#  url: "#about"
+

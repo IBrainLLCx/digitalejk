@@ -13,21 +13,29 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# Site settings
+timezone: America/Los_Angeles
+permalink: /posts/:title
 title: Digitale Brain
+description: Santa Clarita, CA
 email: pcisnerp@gmail.com
-#description: ""
 
 # Index File
 #####################################
-content: DigitaleBrain
-content2: Demo
 ButtonContent: Read Me
 #####################################
-contact: true
-history: false
-
+contact:  true
+counter:  false
+history:  false
+whatwedo: false
+staff:    false
+blog:     true
+proyects :  true
 #####################################
-baseurl: "" # the subpath of your site, e.g. /blog
+extrafooter: false
+#####################################
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://www.digitalebrain.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter: https://twitter.com/ZioGuillo
 github: https://github.com/ZioGuillo
@@ -36,9 +44,12 @@ linkedin: https://www.linkedin.com/in/pablocisneros/
 
 # Build settings
 markdown: kramdown
+kramdown:
+  auto_ids: false
 theme: jekyll-theme-digitalebrain
 plugins:
   - jekyll-feed
+  - jekyll-random
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -46,8 +57,22 @@ plugins:
 exclude:
 - Gemfile
 - Gemfile.lock
+- _raw
+- .asset-cache
+- vendor
+- .gitignore
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
-#   - vendor/ruby/
+# Assets configuration
+assets:
+  compress:
+    css: true
+    js: true
+  digest: true
+  sources:
+    - assets/images
+    - assets/js
+    - assets/css
+    - assets/fonts

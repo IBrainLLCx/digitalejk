@@ -1,4 +1,5 @@
 <!-- nav -->
+
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" data-aos="fade-down" data-aos-delay="500">
       <div class="container">
         <a class="navbar-brand" href="/"><span class="flaticon-brain"></span> DigitaleBrain</a>
@@ -8,25 +9,15 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
 
-            {% if page.url == "/" %}
-              <li class="nav-item active">
-            {% else %}
-              <li class="nav-item">
-            {% endif %}
-              <a class="nav-link" href="/">Home</a></li>
+            {% for item in site.data._navlist.navs %}
+              {% if page.url == item.url %}
+                <li class="nav-item active">
+              {% else %}
+                <li class="nav-item">
+              {% endif %}
+                <a href="{{ site.url }}{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
+            {% endfor %}
 
-            {% if page.url == "/#contactus" %}
-              <li class="nav-item active">
-            {% else %}
-              <li class="nav-item">
-            {% endif %}
-              <a class="nav-link" href="#contactus">Contact Us</a></li>
-
-            <!--<li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>
-            <li class="nav-item"><a href="#history" class="nav-link">Know us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>-->
           </ul>
         </div>
       </div>

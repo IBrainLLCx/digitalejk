@@ -1,4 +1,4 @@
-<div class="ftco-section bg-light">
+<div class="ftco-section bg-light" id="blog">
     <div class="container">
       <div class="row justify-content-center mb-5 pb-5">
         <div class="col-md-7 text-center"  data-aos="fade-up">
@@ -7,62 +7,22 @@
       </div>
       <div class="row" data-aos="fade-up">
         <div class="carousel owl-carousel ftco-owl">
-          <div class="item">
-            <div class="blog-entry" data-aos="fade-up">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_5.jpg');">
-              </a>
-              <div class="text">
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <div class="meta">
-                  <div><a href="#"><span class="icon-calendar"></span> June 29, 2018</a></div>
-                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="blog-entry" data-aos="fade-up" data-aos-delay="100">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_6.jpg');">
-              </a>
-              <div class="text">
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <div class="meta">
-                  <div><a href="#"><span class="icon-calendar"></span> June 29, 2018</a></div>
-                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+        {% for post in site.posts %}
           <div class="item">
             <div class="blog-entry" data-aos="fade-up" data-aos-delay="200">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_7.jpg');">
+              <a href="{{ post.url }}" class="block-20" style="background-image: url('assets/images/{{ post.imagen }}.jpg');">
               </a>
               <div class="text">
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="{{ post.url }}">{{ post.title }}</a></h3>
                 <div class="meta">
-                  <div><a href="#"><span class="icon-calendar"></span> June 29, 2018</a></div>
-                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  <div><a href="{{ post.url }}"><span class="icon-calendar"></span> {{ post.date | date: "%m/%d/%Y" }}</a></div>
+                  <div><a href="{{ post.url }}"><span class="icon-person"></span>{{ post.author}}</a></div>
+                  <div><a href="{{ post.url }}"><span class="icon-chat"></span> 19</a></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="blog-entry" data-aos="fade-up" data-aos-delay="200">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_8.jpg');">
-              </a>
-              <div class="text">
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <div class="meta">
-                  <div><a href="#"><span class="icon-calendar"></span> June 29, 2018</a></div>
-                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+         {% endfor %}
         </div>
       </div>
     </div>

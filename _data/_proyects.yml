@@ -1,0 +1,25 @@
+proyects_list_title: Proyects
+proyects:
+
+- title: Terra Ascending
+  content: Suspendisse tristique interdum eros, a luctus ipsum dignissim et. Nunc commodo nisi aliquam elementum mattis. Vestibulum nisi quam, tincidunt a blandit vitae, fringilla non lectus. Donec elementum interdum lectus sed lacinia. Aenean interdum eget nunc quis interdum.
+  url: /
+  image: aws
+
+- title: Cry of Broken Things
+  content: Aenean sagittis augue tellus, et porta nulla venenatis at. Cras posuere nisi non lacus tincidunt efficitur. Phasellus efficitur lectus a erat eleifend molestie.
+  url: /
+  image: arin
+
+- title: Storm of Thieves
+  content: Praesent eu mauris auctor, dictum mi et, eleifend massa. Donec finibus interdum mauris, sed dictum dui gravida at. Mauris maximus eleifend urna, sagittis ullamcorper justo tempor nec. Aliquam dignissim elit non leo sodales consequat. In hac habitasse platea dictumst.
+  url: /
+  image: apple
+
+- title: The Colossus in the Winter
+  content: Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+  url: /
+  image: ansible
+
+
+

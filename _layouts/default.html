@@ -2,68 +2,58 @@
 <html lang="en">
 {% include _head.html %}
   <body>
-
+  <!-- NAVBAR -->
   {% include _navbar.html %}
-
+  <!-- END NAVBAR -->
     <section class="bg-mobile ftco-cover overlay" id="section-home" data-aos="fade"  data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center ftco-vh-100">
           <div id="left-main" class="col-md-8 text-center">
-            <h1 class="ftco-heading mb-4" data-aos="fade-up" data-aos-delay="500"> {{ site.content }} </h1>
-            <h2 class="h5 ftco-subheading mb-5" data-aos="fade-up"  data-aos-delay="600"> {{ site.content2 }} </h2>
+            <h1 class="ftco-heading mb-4" data-aos="fade-up" data-aos-delay="500"> {{ site.title }} </h1>
+            <h2 class="h5 ftco-subheading mb-5" data-aos="fade-up"  data-aos-delay="600"> {{ site.description }} </h2>
             <p data-aos="fade-up"  data-aos-delay="700"><a href="#" target="_blank" class="btn btn-outline-white px-4 py-3" data-toggle="modal" data-target="#reservationModal">{{ site.ButtonContent }}</a></p>
           </div>
         </div>
       </div>
     </section>
-
-{% if page.counter %}
-
+<!-- section 01 -->
+{% if site.counter %}
   {% include _counter.html %}
-
 {% endif %}
-
-{% if site.history == true %}
-
+<!-- end section 01 -->
+<!-- section 02 -->
+{% if site.history %}
   {% include _history.html %}
-
 {% endif %}
-
-{% if page.wwe %}
-
-  {% include _wwe.html %}
-
+<!-- end section 02 -->
+<!-- section 03 -->
+{% if site.whatwedo %}
+  {% include _whatwedo.html %}
 {% endif %}
-
-{% if page.testimonies %}
-
-  {% include _testimonies.html %}
-
+<!-- end section 03 -->
+<!-- section 04 -->
+{% if site.proyects %}
+  {% include _proyects.html %}
 {% endif %}
-
-{% if page.staff %}
-
+<!-- end section 04 -->
+<!-- section 05 -->
+{% if site.staff %}
   {% include _personal.html %}
-
 {% endif %}
-
-{% if site.contact == true %}
-
-  {% include _contactus.html %}
-
-{% endif %}
-
-{% if page.blog %}
-
+<!-- end section 05 -->
+<!-- section 06 -->
+{% if site.blog %}
   {% include _blog.html %}
-
 {% endif %}
-
-<!-- extra content -->
-
+<!-- end section 06 -->
+<!-- section 07 -->
+{% if site.contact %}
+  {% include _contactus.html %}
+{% endif %}
+<!-- end section 07 -->
+<!-- FOOTER -->
 {% include _footer.html %}
-
+<!-- END FOOTER -->
 {% include loader.html %}
-
   </body>
 </html>

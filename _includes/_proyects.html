@@ -1,0 +1,36 @@
+<div class="ftco-section testimony-img" id="proyects" style="background-image: url(assets/images/imagen03.jpg);" data-aos="fade"  data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 text-center heading" data-aos="fade-up">
+          <h2>PROYECTS</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row d-flex no-gutters">
+        <!-- =======================start snnipes ===========================
+        {% assign value = site.data._proyects.proyects.size %} -->
+        {% for items in site.data._proyects.proyects %}
+        {% capture mod %}{{ forloop.index | modulo:2 }}{% endcapture %}
+        <div class="col-lg align-self-sm-end" data-aos="fade-up">
+          {% if mod == '0' %}
+            <div class="testimony">
+          {% else %}
+            <div class="testimony overlay">
+          {% endif %}
+             <blockquote>
+                <p>&ldquo;{{ items.content }}&rdquo;</p>
+              </blockquote>
+              <div class="author d-flex mt-4">
+                <div class="image mr-3 align-self-center">
+                  <img src="assets/images/{{ items.image }}.png" alt="">
+                </div>
+                <div class="name align-self-center">{{ items.title }}<span class="position"><a href="{{ items.url }}" target="_blank" style="color: white;">Read me</a></span></div>
+              </div>
+          </div>
+        </div>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+</div>
